@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:learn_getx/widgets/app_input.dart';
 
 import 'controllers/home.controller.dart';
 
@@ -13,10 +14,15 @@ class HomeScreen extends GetView<HomeController> {
         title: const Text('HomeScreen'),
         centerTitle: true,
       ),
-      body: const Center(
-        child: Text(
-          'HomeScreen is working',
-          style: TextStyle(fontSize: 20),
+      body: Center(
+        child: Column(
+          children: const [
+            Text(
+              'HomeScreen is working',
+              style: TextStyle(fontSize: 20),
+            ),
+            AppInput(hint: 'Email'),
+          ],
         ),
       ),
     );
