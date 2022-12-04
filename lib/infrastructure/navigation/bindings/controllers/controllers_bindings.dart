@@ -1,0 +1,1 @@
+export 'package:learn_getx/infrastructure/navigation/bindings/controllers/home.controller.binding.dart'; 
